@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Clone Coding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/post.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/heart.js"></script>
+
+</head>
+
+<body>
+    <div class="nav flex-row">
+        <div class="nav-content flex-row">
+            <div class="logo flex-row">
+                <img width="102" src="assets/image/logo_instagram.png">
+                <i class="bi bi-chevron-down"></i>
+            </div>
+            <div class="search-box flex-row">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="icons flex-row">
+                <img src="assets/image/icons/1.png">
+                <img src="assets/image/icons/2.png">
+                <img src="assets/image/icons/3.png">
+                <img src="assets/image/icons/4.png">
+                <img src="assets/image/icons/5.png">
+                <img width="32" src="assets/image/follower/1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="main flex-row">
+        <div class="post flex-col">
+            <div class="profile flex-row">
+                <div class="img-wrap">
+                    <img width="32" src="assets/image/profile/1.png">
+                </div>
+                <p class="flex-col">
+                    <span>smktekmuhcianjur</span>
+                    <span>Brisbane, Queensland, Australia</span>
+                </p>
+                <img width="20" src="assets/image/icons/7.png">
+            </div>
+            <div class="imgs swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img width="470" src="assets/image/post/1.png"></div>
+                    <div class="swiper-slide"><img width="470" src="assets/image/post/1.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="post-icons flex-row">
+                <img id="heart" onclick="like()" src="assets/image/icons/5.png">
+                <img src="assets/image/icons/9.png">
+                <img src="assets/image/icons/2.png">
+                <img src="assets/image/icons/10.png">
+            </div>
+            <div class="likes">
+                9,999 likes
+            </div>
+            <div class="comments">
+                <span class="title">Apple</span>
+                Selamat untuk kelas 12 Tahun ajaran 2022/2023 karena telah selesai menjalani Ujian Sekolah Berbasis
+                Android yang dilaksanakan pada tanggal 3-6 April kemarin,semoga kalian semua menjadi siswa siswi yang
+                selalu membanggakan ya!🤍
+            </div>
+            <div class="count">
+                View all 169 comments
+            </div>
+            <div class="time">
+                24 HOURS AGO
+            </div>
+        </div>
+
+        <div class="account flex-col">
+            <div class="account-content">
+                <li class="flex-row">
+                    <div class="img-wrap">
+                        <img width="56" src="assets/image/follower/1.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>agrls.03</span>
+                        <span>Agi Riyadh</span>
+                    </p>
+                    <a href="#">switch</a>
+                </li>
+                <li class="flex-row suggestion">
+                    <span>Suggestions for you</span>
+                    <a href="#">See All</a>
+                </li>
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="assets/image/follower/2.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>nadilaaaa_7</span>
+                        <span>Followed by qadamussidiq_el19 + 7 more</span>
+                    </p>
+                    <a href="#">Follow</a>
+                </li>
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="assets/image/follower/3.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>euisrinadiana</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                </li>
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="assets/image/follower/4.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>ssrrlliii</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                </li>
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="assets/image/follower/5.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>pajar9061</span>
+                        <span>Followed by caramlsh_ + 8 more</span>
+                    </p>
+                    <a href="#">Follow</a>
+                </li>
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="assets/image/follower/6.png">
+                    </div>
+                    <p class="flex-col">
+                        <span>lazismucianjur</span>
+                        <span>Followed by hiiakusri + 5 more</span>
+                    </p>
+                    <a href="#">Follow</a>
+                </li>
+            </div>
+            <div class="about">
+                <a href="#">About</a>
+                <a href="#">Help</a>
+                <a href="#">Press</a>
+                <a href="#">API</a>
+                <a href="#">Jobs</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Locations</a>
+                <a href="#">Language</a>
+                <a href="#">English</a>
+            </div>
+            <div class="name">
+                © 2023 INSTAGRAM FROM META
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/swiper.js"></script>
+</body>
+
+</html>
